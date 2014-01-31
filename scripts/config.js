@@ -1,8 +1,8 @@
 define({
 	app_name: "MyExampleApp", 
 	shim : {
-		'ember' : {
-			deps: ['handlebars', 'jquery'],
+		'ember.min' : {
+			deps: ['handlebars', 'jquery2'],
 			exports: 'Ember'
 		}
 	},
@@ -13,7 +13,10 @@ define({
 		'controllers': 'app/controllers',
     	'templates': 'app/templates',
 		/*libs*/
-		'jquery': 'libs/jquery/1.9.1/jquery',
+		/*'jquery.dev': 'libs/jquery/1.11.0/jquery.dev',*/
+		/*'jquery': 'libs/jquery/1.11.0/jquery.min',*/
+		/*'jquery2.dev': 'libs/jquery/2.1.0/jquery.dev',*/
+		'jquery2': 'libs/jquery/2.1.0/jquery.min',
 		'handlebars': 'libs/handlebars/1.0.rc.3/handlebars',
 		/*'ember.dev': 'libs/ember/1.3.1/ember.dev',*/
 		/*'ember.prod': 'libs/ember/1.3.1/ember.prod',*/
