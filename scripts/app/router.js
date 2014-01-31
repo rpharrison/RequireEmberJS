@@ -1,4 +1,4 @@
-define(["ember"], function(Ember){
+define(["ember.min"], function(Ember){
 	var Router = Ember.Router.extend({
 	  root: Ember.Route.extend({
 	    index: Ember.Route.extend({

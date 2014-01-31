@@ -1,5 +1,5 @@
 define([
-	"ember",
+	"ember.min",
 	"text!templates/applicationTemplate.html"
 ], function(Ember, applicationTemplate) {
 
