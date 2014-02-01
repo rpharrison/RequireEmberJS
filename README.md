@@ -21,7 +21,7 @@ The future?
 
 -> jQueryUI
 -> jQuery Mobile
--> Ember-Facebook
+-> ~~Ember-Facebook~~
 -> Google social plugins
 -> Google Maps support
 -> Twitter widgets.js
