@@ -24,6 +24,7 @@ define({
 		/*'jquery': 'libs/jquery/1.11.0/jquery.min',*/
 		/*'jquery2.dev': 'libs/jquery/2.1.0/jquery.dev',*/
 		'jquery2': 'libs/jquery/2.1.0/jquery.min',
+		'twitter': '//platform.twitter.com/widgets',
 		'handlebars.dev': 'libs/handlebars/1.3.0/handlebars.dev',
 		/*'handlebars': 'libs/handlebars/1.3.0/handlebars',*/
 		/*'ember.dev': 'libs/ember/1.3.1/ember.dev',*/
