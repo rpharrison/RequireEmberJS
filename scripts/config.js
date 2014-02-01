@@ -4,8 +4,15 @@ define({
 		'ember.min' : {
 			deps: ['handlebars.dev', 'jquery2'],
 			exports: 'Ember'
+		},
+	        'emberFacebook':{
+			deps:['ember.min']
+		},
+		'App':{
+			deps:['ember.min','emberFacebook']
 		}
 	},
+
 	paths : {
 		'App': 'app/main',		
 		'models': 'app/models',
@@ -22,6 +29,7 @@ define({
 		/*'ember.dev': 'libs/ember/1.3.1/ember.dev',*/
 		/*'ember.prod': 'libs/ember/1.3.1/ember.prod',*/
 		'ember.min': 'libs/ember/1.3.1/ember.prod.min',
+		'emberFacebook': 'libs/ember-facebook',
 		'bootstrap': 'libs/bootstrap/3.0.0/js/bootstrap.min',
 		/*requirejs-plugins*/
 		'text': 'libs/requirejs-plugins/text',
