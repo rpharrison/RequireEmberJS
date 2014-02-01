@@ -22,6 +22,7 @@ define({
 		/*'ember.dev': 'libs/ember/1.3.1/ember.dev',*/
 		/*'ember.prod': 'libs/ember/1.3.1/ember.prod',*/
 		'ember.min': 'libs/ember/1.3.1/ember.prod.min',
+		'bootstrap': 'libs/bootstrap/3.0.0/js/bootstrap.min',
 		/*requirejs-plugins*/
 		'text': 'libs/requirejs-plugins/text',
 		'hbs': 'libs/requirejs-plugins/hbs',
