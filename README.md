@@ -24,5 +24,5 @@ The future?
 -> ~~Ember-Facebook~~
 -> Google social plugins
 -> Google Maps support
--> Twitter widgets.js
+-> ~~Twitter widgets.js~~
 -> Custom jQuery
