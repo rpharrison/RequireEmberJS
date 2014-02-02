@@ -18,12 +18,13 @@ define({
 		'models': 'app/models',
 		'views': 'app/views',
 		'controllers': 'app/controllers',
-    	'templates': 'app/templates',
+    	        'templates': 'app/templates',
 		/*libs*/
 		/*'jquery.dev': 'libs/jquery/1.11.0/jquery.dev',*/
 		/*'jquery': 'libs/jquery/1.11.0/jquery.min',*/
 		/*'jquery2.dev': 'libs/jquery/2.1.0/jquery.dev',*/
 		'jquery2': 'libs/jquery/2.1.0/jquery.min',
+		'jquery.ui': 'libs/jquery.ui/1.9.2/jquery-ui-1.9.2.custom.min',
 		'googlePlus': '//apis.google.com/js/plusone',
 		'twitter': '//platform.twitter.com/widgets',
 		'handlebars.dev': 'libs/handlebars/1.3.0/handlebars.dev',
