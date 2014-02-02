@@ -1,11 +1,20 @@
-define(["ember.min"], function(Ember){
-	var Router = Ember.Router.extend({
-	  root: Ember.Route.extend({
-	    index: Ember.Route.extend({
-	      route: '/'
-	    })
-	  })
-	});
+define(["ember.min"], function(Ember) {
 
-	return Router;
+  var Router = Ember.Router.extend();
+
+  Router.map(function() {
+    this.route("index", {
+      path: "/"
+    });
+    this.route("selectedTab", {
+      path: "/:tab"
+    });
+  /*this.resource("tabs", {path: "/"}, function(){
+    this.route("selectedTab", {
+      path: ":tab"
+    });
+  });*/
+  });
+
+  return Router;
 });
