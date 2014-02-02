@@ -22,7 +22,7 @@ The future?
 -> jQueryUI
 -> jQuery Mobile
 -> ~~Ember-Facebook~~
--> Google social plugins
+-> ~~Google social plugins~~
 -> Google Maps support
 -> ~~Twitter widgets.js~~
 -> Custom jQuery
