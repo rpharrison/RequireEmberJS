@@ -9,11 +9,11 @@ define(["ember.min"], function(Ember) {
     this.route("selectedTab", {
       path: "/:tab"
     });
-  /*this.resource("tabs", {path: "/"}, function(){
-    this.route("selectedTab", {
-      path: ":tab"
-    });
-  });*/
+    /*this.resource("tabs", {path: "/"}, function(){
+      this.route("selectedTab", {
+        path: ":tab"
+      });
+    });*/
   });
 
   return Router;
