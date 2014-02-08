@@ -2,24 +2,25 @@ define([
   "ember.min",
   "controllers/tabListController",
   "text!templates/tabIndexItemTemplate.html"
-], function(Em, tabListController, tabIndexItemTemplate){
-  
+],
+function(Em, tabListController, tabIndexItemTemplate){
+
   var TabIndexItemView = Em.View.extend({
-      tagName: 'li',
-      content: null,
-      controller: tabListController,
-      template: Ember.Handlebars.compile(tabIndexItemTemplate),
+    tagName: 'li',
+    content: null,
+    controller: tabListController,
+    template: Ember.Handlebars.compile(tabIndexItemTemplate),
       classNameBindings: ['selected'],
       classNames: ["tab-index-item"],
       selected: function(){
-          if(this.get('content') === this.get("controller.selected") ){
-              return 'active';
-          }
+        if(this.get('content') === this.get("controller.selected") ){
+          return 'active';
+        }
       }.property("controller.selected").cacheable(),
       removeTab: function(e){
         var tab = this.get("content");
         var controller = this.get("controller");
-        
+
         controller.removeTab(tab);
       },
       toggleEditing: function(){
@@ -43,6 +44,6 @@ define([
         e.preventDefault();
       }
   });
-  
+
   return TabIndexItemView;
 });

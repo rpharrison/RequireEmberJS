@@ -2,7 +2,8 @@ define([
   "ember.min",
   "controllers/tabListController",
   "text!templates/selectedTabTemplate.html"
-], function(Ember, tabListController, selectedTabTemplate){
+],
+function(Ember, tabListController, selectedTabTemplate){
 
   Ember.TEMPLATES["selectedTab"] = Ember.Handlebars.compile(selectedTabTemplate);
 

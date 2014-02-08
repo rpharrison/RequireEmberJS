@@ -1,24 +1,27 @@
 define({
-	app_name: "MyExampleApp", 
-	shim : {
-		'ember.min' : {
-			deps: ['handlebars.dev', 'jquery2'],
-			exports: 'Ember'
-		},
-	        'emberFacebook':{
-			deps:['ember.min']
-		},
-		'App':{
-			deps:['ember.min','emberFacebook']
-		}
-	},
+  app_name: "MyExampleApp",
+
+  shim : {
+    'ember.min' : {
+      deps: ['handlebars.dev', 'jquery2'],
+      exports: 'Ember'
+    },
+    'emberFacebook':{
+      deps:['ember.min']
+    },
+    'App':{
+    deps:['ember.min','emberFacebook']
+    }
+    'jquery.ui': ['jquery2']
+    },
 
 	paths : {
-		'App': 'app/main',		
+		'App': 'app/main',
 		'models': 'app/models',
 		'views': 'app/views',
 		'controllers': 'app/controllers',
-    	        'templates': 'app/templates',
+    	'templates': 'app/templates',
+		'routes': 'app/routes',
 		/*libs*/
 		/*'jquery.dev': 'libs/jquery/1.11.0/jquery.dev',*/
 		/*'jquery': 'libs/jquery/1.11.0/jquery.min',*/
@@ -39,11 +42,11 @@ define({
 		'hbs': 'libs/requirejs-plugins/hbs',
 		'domReady': 'libs/requirejs-plugins/domReady'
 	},
+
 	/*hbs plugin options*/
 	hbs: {
 		disableI18n: true,
 		templateExtension: "html"
 	}
-
 }); 
 

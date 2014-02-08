@@ -2,7 +2,8 @@ define([
   "ember.min",
   "controllers/tabListController",
   "views/TabIndexItemView"
-], function(Ember, tabListController, TabIndexItemView){
+],
+function(Ember, tabListController, TabIndexItemView){
   var TabIndexView = Ember.CollectionView.extend({
     tagName: "ul",
     classNames: ["nav", "nav-list"],
@@ -11,7 +12,7 @@ define([
     itemViewClass: TabIndexItemView,
     didInsertElement: function() {
       var self = this;
-      
+
       this.$().sortable({
         axis: 'y',
         update: function(event, ui) {
@@ -22,8 +23,8 @@ define([
           });
         }
       });
-     }
+    }
   });
-  
+
   return TabIndexView;
 });
